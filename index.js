@@ -17,9 +17,9 @@ Do the following:
 
    HINT: no function required
 */
-let votingAge = 18
+let votingAge = 18;
 if (votingAge >= 18) {
-  console.log('True')
+  console.log("True");
 }
 
 /*
@@ -33,14 +33,12 @@ Do the following:
    HINT: no function required
 */
 
-let var1 = 1
-let var2 = 2
-if (var1<3) {
-  var2 = 3
-  console.log(var2)
+let var1 = 1;
+let var2 = 2;
+if (var1 < 3) {
+  var2 = 3;
+  console.log(var2);
 }
-
-
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -52,10 +50,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-  let string = "1999"
-parseInt(string)
-  console.log(string)
-
+let string = "1999";
+parseInt(string);
+console.log(string);
 
 /*
 Task 1d - Multiply
@@ -66,12 +63,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(a,b){
-    return a * b
+function multiply(a, b) {
+  return a * b;
 }
-  multiply(2,3)
-
-
+multiply(2, 3);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -83,12 +78,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(age){
-   return age *7
+function dogYears(age) {
+  return age * 7;
 }
-dogYears(5)
-
-
+dogYears(5);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -115,7 +108,7 @@ Use the hungryDog function and feeding requirements below to do the following:
      7 - 12 months 4% of their body weight
     
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
-*/  
+*/
 
 function hungryDog(weight, age) {
   if (age >= 1 && weight <= 5) {
@@ -138,8 +131,6 @@ function hungryDog(weight, age) {
 }
 console.log(hungryDog(3, 4));
 
-
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 // Rock, Paper, Scissors - Let's play against the computer!
@@ -160,33 +151,32 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-let computer = Math.ceil(Math.random() * 3)
+let computer = Math.ceil(Math.random() * 3);
 function game(user, computer) {
-    //   1=Rock 2=Paper 3=Scissors
-    if (user === 1 && computer === 2) {
-        return "Computer wins!"
-    } else if (user === 1 && computer === 3) {
-        return "User wins!"
-    } else if (user === 2 && computer === 1) {
-        return "User wins!"
-    } else if (user === 3 && computer === 1) {
-        return "Computer wins!"
-    } else if (user === 3 && computer === 2) {
-        return "User wins!"
-    } else if (user === 2 && computer === 3) {
-        return "Computer wins!"
-    } else {
-        return "Draw!"
-    }
+  //   1=Rock 2=Paper 3=Scissors
+  if (user === 1 && computer === 2) {
+    return "Computer wins!";
+  } else if (user === 1 && computer === 3) {
+    return "User wins!";
+  } else if (user === 2 && computer === 1) {
+    return "User wins!";
+  } else if (user === 3 && computer === 1) {
+    return "Computer wins!";
+  } else if (user === 3 && computer === 2) {
+    return "User wins!";
+  } else if (user === 2 && computer === 3) {
+    return "Computer wins!";
+  } else {
+    return "Draw!";
+  }
 }
 
-game(3, 3)  
-  
+game(3, 3);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
-//Metric Converter 
-//Task 5a - KM to Miles 
+//Metric Converter
+//Task 5a - KM to Miles
 /*
 Using the miles function below do the following:
   1. Receive a number of kilometers
@@ -199,7 +189,6 @@ function miles(kiloM) {
 }
 miles(2);
 
-
 //Task 5b - Feet to CM
 /*
 Using the feet function below do the following:
@@ -211,9 +200,7 @@ Using the feet function below do the following:
 function feet(cm) {
   return cm * 0.3937008;
 }
-feet(2)
- 
-
+feet(2);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -225,12 +212,16 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-bottles = 99
-function annoyingSong(/*add your code here*/){
- while
-    
-  }
+// bottles = 99
+// function annoyingSong(/*add your code here*/){
+//   while (bottles <= 0) {
+//     if (bottles === 99) {
 
+//     }
+//    bottles --
+//  }
+
+//   }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -246,12 +237,10 @@ Using the grade function below do the following:
    60-69 should return 'you got a D'
    below should return 'you got an F'
 */
-  
-function grade(/*Your Code here */){
+
+function grade(/*Your Code here */) {
   /*Your Code here */
-  }
-  
-  
+}
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -265,27 +254,24 @@ Using the vowelCounter function below do the following:
   HINT - try looking up the .includes() method
 */
 
-
 function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+  /*add your code here*/
 }
-
-
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-function foo(){
-    //console.log('its working');
-    return 'bar';
+function foo() {
+  //console.log('its working');
+  return "bar";
 }
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-export default{
-    foo,
-    multiply,
-    dogYears,
-    hungryDog,
-    game,
-    miles,
-    feet,
-    annoyingSong,
-    grade
-}
+export default {
+  foo,
+  multiply,
+  dogYears,
+  hungryDog,
+  game,
+  miles,
+  feet,
+  annoyingSong,
+  grade,
+};
