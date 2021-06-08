@@ -126,7 +126,7 @@ function hungryDog(weight, age){
     return 'please try again'
     }
 }
-  // console.log('task 3', hungryDog())
+  // console.log('task 3', hungryDog())//
 
 
 
