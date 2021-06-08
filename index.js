@@ -17,8 +17,10 @@ Do the following:
 
    HINT: no function required
 */
-
-
+let votingAge = 18
+if (votingAge >= 18) {
+  console.log('True')
+}
 
 /*
 Task 1b - Values
@@ -31,7 +33,12 @@ Do the following:
    HINT: no function required
 */
 
-
+let var1 = 1
+let var2 = 2
+if (var1<3) {
+  var2 = 3
+  console.log(var2)
+}
 
 
 
@@ -45,8 +52,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
+  let string = "1999"
+parseInt(string)
+  console.log(string)
 
 
 /*
@@ -58,9 +66,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a,b){
+    return a * b
+}
+  multiply(2,3)
 
 
 
@@ -74,9 +83,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+   return age *7
 }
+dogYears(5)
 
 
 
@@ -107,26 +117,26 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(weight, age){
+function hungryDog(weight, age) {
   if (age >= 1 && weight <= 5) {
-      return weight * 0.05
+    return weight * 0.05;
   } else if (age >= 1 && weight >= 6 && weight <= 10) {
-    return weight * 0.04
+    return weight * 0.04;
   } else if (age >= 1 && weight >= 11 && weight <= 15) {
-    return weight *0.03
+    return weight * 0.03;
   } else if (age >= 1 && weight > 15) {
-    return weight * 0.02
-  } else if (age < 1 && >= 0.583) {
-    return weight * 0.04
+    return weight * 0.02;
+  } else if (age < 1 && weight >= 0.583) {
+    return weight * 0.04;
   } else if (age < 0.583 && age >= 0.333) {
-    return weight *0.05
+    return weight * 0.05;
   } else if (age < 0.333) {
-    return weight * 0.10
+    return weight * 0.1;
   } else {
-    return 'please try again'
-    }
+    return "please try again";
+  }
 }
-  // console.log('task 3', hungryDog())//
+console.log(hungryDog(3, 4));
 
 
 
@@ -150,9 +160,16 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
+let computer = Math.ceil(Math.random()*3)
 function game(user, computer){
-    /*add your code here*/
+  /*add your code here*/
+  if (computer === 1) {
+    return "Scissors"
+  } else if (computer ===2){
+    return "Paper"
+  } else if (computer === 3) {
+    return "Rock"
+  }
 }
   
   
