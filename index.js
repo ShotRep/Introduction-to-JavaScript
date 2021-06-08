@@ -214,13 +214,15 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-let bottles = 99;
-function annoyingSong() {
-  while (bottles <= 0) {
-    if (bottles === 99) {
-      return bottles + "Bottles of beer on the wall, 99 bottles of beer"
+
+function annoyingSong(i) {
+  for (i = 0; i <= 99; i--) {
+    if (i===99) {
+      return '99 bottles'
     }
-    bottles--;
+    if (i === 98) {
+      return "98 bottles";
+    }
   }
 }
 annoyingSong()
