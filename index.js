@@ -17,6 +17,7 @@ Do the following:
 
    HINT: no function required
 */
+
 let votingAge = 18;
 if (votingAge >= 18) {
   console.log("True");
@@ -147,7 +148,7 @@ Use the game function below to do the following:
    - lose should return "you lose!"
    - tie should return "it's a tie"
   
-  RULES OF THE GAME: 1. Scissors beats Paper | 2. Paper beats Rock | 3. Rock beats Scissors | Or there's a tie
+  RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
@@ -156,19 +157,19 @@ let computer = Math.ceil(Math.random() * 3);
 function game(user, computer) {
   //   1=Rock 2=Paper 3=Scissors
   if (user === 1 && computer === 2) {
-    return "Computer wins!";
+    return "you lose!";
   } else if (user === 1 && computer === 3) {
-    return "User wins!";
+    return "you win!";
   } else if (user === 2 && computer === 1) {
-    return "User wins!";
+    return "you win!";
   } else if (user === 3 && computer === 1) {
-    return "Computer wins!";
+    return "you lose!";
   } else if (user === 3 && computer === 2) {
-    return "User wins!";
+    return "you win!";
   } else if (user === 2 && computer === 3) {
-    return "Computer wins!";
+    return "you lose!";
   } else {
-    return "Draw!";
+    return "it's a tie";
   }
 }
 
@@ -186,7 +187,7 @@ Using the miles function below do the following:
 */
 
 function miles(kiloM) {
-  return kiloM * 0.6213712;
+  return kiloM * 0.621371;
 }
 miles(2);
 
@@ -199,7 +200,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm) {
-  return cm * 0.3937008;
+  return cm / 30.48;
 }
 feet(2);
 
@@ -213,16 +214,16 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-// bottles = 99
-// function annoyingSong(/*add your code here*/){
-//   while (bottles <= 0) {
-//     if (bottles === 99) {
-
-//     }
-//    bottles --
-//  }
-
-//   }
+let bottles = 99;
+function annoyingSong() {
+  while (bottles <= 0) {
+    if (bottles === 99) {
+      return bottles + "Bottles of beer on the wall, 99 bottles of beer"
+    }
+    bottles--;
+  }
+}
+annoyingSong()
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
