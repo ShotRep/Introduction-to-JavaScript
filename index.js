@@ -151,6 +151,7 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+
 let computer = Math.ceil(Math.random() * 3);
 function game(user, computer) {
   //   1=Rock 2=Paper 3=Scissors
@@ -180,7 +181,7 @@ game(3, 3);
 /*
 Using the miles function below do the following:
   1. Receive a number of kilometers
-  2. Convert the number of kiolmeters received to miles
+  2. Convert the number of kilometers received to miles
   3. Return the number of miles
 */
 
