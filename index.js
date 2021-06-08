@@ -156,22 +156,31 @@ Use the game function below to do the following:
    - lose should return "you lose!"
    - tie should return "it's a tie"
   
-  RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
+  RULES OF THE GAME: 1. Scissors beats Paper | 2. Paper beats Rock | 3. Rock beats Scissors | Or there's a tie
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-let computer = Math.ceil(Math.random()*3)
-function game(user, computer){
-  /*add your code here*/
-  if (computer === 1) {
-    return "Scissors"
-  } else if (computer ===2){
-    return "Paper"
-  } else if (computer === 3) {
-    return "Rock"
-  }
+let computer = Math.ceil(Math.random() * 3)
+function game(user, computer) {
+    //   1=Rock 2=Paper 3=Scissors
+    if (user === 1 && computer === 2) {
+        return "Computer wins!"
+    } else if (user === 1 && computer === 3) {
+        return "User wins!"
+    } else if (user === 2 && computer === 1) {
+        return "User wins!"
+    } else if (user === 3 && computer === 1) {
+        return "Computer wins!"
+    } else if (user === 3 && computer === 2) {
+        return "User wins!"
+    } else if (user === 2 && computer === 3) {
+        return "Computer wins!"
+    } else {
+        return "Draw!"
+    }
 }
-  
+
+game(3, 3)  
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -185,10 +194,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
-
+function miles(kiloM) {
+  return kiloM * 0.6213712;
+}
+miles(2);
 
 
 //Task 5b - Feet to CM
@@ -199,9 +208,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
-  }
+function feet(cm) {
+  return cm * 0.3937008;
+}
+feet(2)
  
 
 
@@ -215,8 +225,10 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
+bottles = 99
 function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+ while
+    
   }
 
 
