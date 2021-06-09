@@ -213,14 +213,14 @@ Using the annoyingSong function below do the following:
   2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
-function annoyingSong(startNum) {
-  for (; startNum > 0; startNum--) {
+function annoyingSong(num) {
+  for (; num > 0; num--) {
     return (
-      startNum +
+      num +
       " bottles of soda on the wall, " +
       startNum +
       " bottles of soda, take one down pass it around " +
-      (startNum - 1) +
+      (numum - 1) +
       " bottles of soda on the wall"
     );
   }
