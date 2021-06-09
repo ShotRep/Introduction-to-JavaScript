@@ -213,19 +213,21 @@ Using the annoyingSong function below do the following:
   2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
-
-
-function annoyingSong(i) {
-  for (i = 0; i <= 99; i--) {
-    if (i===99) {
-      return '99 bottles'
-    }
-    if (i === 98) {
-      return "98 bottles";
-    }
+function annoyingSong(startNum) {
+  for (; startNum > 0; startNum--) {
+    return (
+      startNum +
+      " bottles of soda on the wall, " +
+      startNum +
+      " bottles of soda, take one down pass it around " +
+      (startNum - 1) +
+      " bottles of soda on the wall"
+    );
   }
 }
-annoyingSong()
+annoyingSong(10);
+
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
